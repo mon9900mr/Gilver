@@ -2,20 +2,21 @@
 
 A Persian RTL jewelry storefront hosted on GitHub Pages.
 
-## Lightweight browser database
+## Database behavior on GitHub Pages
 
-This GitHub Pages build uses `assets/js/database.js` with browser LocalStorage. It can save and read account records, products, orders, and activity logs in the same browser profile.
+This project runs without a server. JavaScript stores users, products, orders, and logs in browser LocalStorage. The admin dashboard reads and displays those records. It also supports exporting and importing a JSON backup.
 
-- First account created in a fresh browser profile is assigned `owner`.
-- Owner can assign `admin`, `seller`, or `customer` roles and ban/unban accounts.
-- Admin can manage products; seller can add/update products; customer uses the storefront.
-- Product records saved from the admin dashboard are loaded by the storefront.
+- The first account created in an empty browser profile becomes owner.
+- Owner can manage account roles and block/unblock users.
+- Admin and seller can manage products according to their permissions.
+- Product images are resized and compressed before being stored.
+- Use **ذخیره نسخه پشتیبان** in the admin dashboard to download a portable JSON database file; use **بازیابی از فایل** to restore it on another browser/device.
 
 ## Important limitations
 
-This is a local/demo database, not a private server database. Data is stored in the visitor's browser, not in GitHub repository files. Other devices and visitors do not share it. Browser storage can be cleared or edited by the user. Client-side roles and password hashing do not provide real authorization against a malicious user. Do not use this for real customer accounts, private information, payments, or production moderation.
+GitHub Pages is static hosting. Browser JavaScript cannot write a TXT/JSON file into the GitHub repository, cannot run SQLite, and cannot create a shared database for all visitors. LocalStorage belongs to one browser profile on one device. Different visitors do not share accounts or records. Clearing browser data can erase the database. The backup file is the manual way to move/keep the data.
 
-For a real multi-user store with private data and reliable owner/admin permissions, a backend service is required. GitHub Pages cannot run SQLite or a Node/PHP server.
+This is a local/demo database, not a secure production backend. Do not use it for real payment or sensitive customer information.
 
 ## Pages
 
