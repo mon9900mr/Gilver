@@ -405,3 +405,30 @@ html,body{background:#10100f!important;color:#f4efe5}
 .wishlist-grid .add-cart{font-size:9px;padding:7px 8px}
 }
 @media(max-width:390px){.wishlist-title-row h1{font-size:29px}.wishlist-heart-art{display:none}.wishlist-grid .product-image-wrap{height:170px}}
+
+
+/* Final wishlist polish: restrained emblem and English wordmark */
+.wishlist-page .brand{direction:ltr;gap:11px}
+.wishlist-page .brand-word{font-family:'Manrope','Outfit',sans-serif;font-size:21px;font-weight:800;letter-spacing:.14em;color:#f3ead9}
+.wishlist-page .brand-word small{font-family:'Manrope',sans-serif;font-size:7px;font-weight:700;letter-spacing:.19em;color:#b9975b;margin-top:5px}
+.wishlist-page .brand-mark{width:42px;height:42px;flex:0 0 42px}
+.wishlist-page .brand-mark svg{display:block}
+.wishlist-heart-art{width:82px;height:82px;flex-basis:82px;border-radius:25px;transform:none;background:linear-gradient(145deg,rgba(202,162,91,.075),rgba(255,255,255,.008));box-shadow:inset 0 1px rgba(255,255,255,.045),0 12px 28px rgba(0,0,0,.16)}
+.wishlist-heart-art svg{width:43px;height:43px;filter:drop-shadow(0 3px 7px rgba(191,145,66,.16))}
+.wishlist-title-row{margin:23px 0 21px}
+.wishlist-title-row h1{font-size:clamp(32px,4.2vw,50px);letter-spacing:-.025em}
+.wishlist-title-row p{max-width:560px}
+.wishlist-hero{padding-top:62px;padding-bottom:34px}
+.wishlist-hero:after{inset:14px 5%;border-radius:20px}
+.wishlist-kicker{letter-spacing:.01em}
+.wishlist-meta{padding-top:2px}
+@media(max-width:680px){
+.wishlist-page .brand-word{font-size:17px;letter-spacing:.12em}
+.wishlist-page .brand-word small{font-size:6px}
+.wishlist-page .brand-mark{width:36px;height:36px;flex-basis:36px}
+.wishlist-heart-art{width:62px;height:62px;flex-basis:62px;border-radius:19px}
+.wishlist-heart-art svg{width:33px;height:33px}
+.wishlist-hero{padding-top:44px;padding-bottom:27px}
+.wishlist-title-row{margin:18px 0}
+.wishlist-title-row h1{font-size:31px}
+}
