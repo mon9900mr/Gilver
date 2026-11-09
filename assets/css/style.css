@@ -203,3 +203,80 @@ body{font-family:var(--font-fa)}
  .product-wish{top:9px;left:9px;width:34px;height:34px}
  .product-wish svg{width:17px;height:17px}
 }
+
+
+/* GILVER signature theme — deep black & warm gold, no white/silver chrome */
+:root{
+ --ink:#0d0c0a;--ink2:#17140f;--gold:#c69b50;--gold2:#e4c47f;
+ --cream:#17140f;--muted:#b6a98f;--line:rgba(198,155,80,.22);
+ --surface:#191611;--surface2:#211b12;--text:#f3ead8;
+ color-scheme:dark;
+}
+html,body{background:#0d0c0a!important;color:#f1e8d7!important}
+body{background:radial-gradient(ellipse at 50% -15%,#282012 0%,#100f0c 42%,#0b0b09 100%)!important}
+.site-header{background:rgba(18,16,12,.88)!important;border:1px solid rgba(211,171,99,.22)!important;box-shadow:0 12px 40px #0008!important;color:#f2e8d5!important}
+.brand{color:#f4e8cf!important}.brand small{color:#b89a64!important}
+.main-nav{color:#c4b89f!important}.main-nav a{color:#c4b89f!important}
+.main-nav a:hover,.main-nav a.active{background:rgba(198,155,80,.13)!important;color:#e5c17b!important}
+.announcement{background:#080807!important;color:#d5b775!important;border-bottom:1px solid #b88c442e}
+.announcement span:nth-child(2){color:#e5c783!important}
+.hero{background:radial-gradient(ellipse at 28% 52%,rgba(190,146,69,.16),transparent 39%),linear-gradient(125deg,#14120e 0%,#1c1811 48%,#0b0b09 100%)!important;color:#f3ead8!important}
+.hero h1,.section-heading h2,.page-hero h1,.detail-copy h1,.about-copy h2,.contact-copy h2{color:#f2e9d8!important}
+.hero-lead,.section-heading>p,.page-hero p:last-child,.about-copy p,.contact-copy p{color:#b9ad98!important}
+.hero-stamp{background:rgba(19,16,11,.82)!important;border:1px solid #c69b5070!important}
+.trust-strip{background:#14120e!important;border-block:1px solid #c69b5026!important;color:#d7c8ab!important}
+.trust-strip div{color:#d7c8ab!important}
+.section{background:transparent!important;color:#f0e5d0!important}
+.featured-section{background:#100f0c!important}
+.collection-card{border:1px solid #c69b5033!important;box-shadow:0 18px 45px #0008!important}
+.product-card{background:linear-gradient(160deg,#211b12,#14120e)!important;border:1px solid #c69b5033!important;box-shadow:0 10px 30px #0006!important;color:#f1e6d1!important}
+.product-title,.product-title a{color:#f0e5d1!important}
+.product-category{color:#b9a47b!important}
+.product-price{color:#e1bd76!important}
+.product-image-wrap{background:#201a11!important}
+.product-wish{background:rgba(18,15,10,.88)!important;color:#e1c17e!important;border:1px solid #c69b5070!important}
+.product-wish.saved{background:#3a2b13!important;color:#f0cc7d!important;border-color:#d6ad61!important}
+.editorial{background:#1a160f!important;color:#f1e6d1!important}
+.editorial-copy h2,.editorial-copy h3{color:#f3e7d0!important}
+.editorial-copy>p:not(.eyebrow){color:#b9ad98!important}
+.newsletter{background:linear-gradient(120deg,#211a10,#11100d)!important;color:#f2e7d1!important;border-block:1px solid #c69b502e}
+.newsletter h2{color:#f4e8d2!important}
+.newsletter p:not(.eyebrow){color:#b9ad98!important}
+.newsletter-form{background:#0e0d0a!important;border:1px solid #b58a454f!important}
+.newsletter-form input{background:transparent!important;color:#f3e8d2!important}
+.newsletter-form input::placeholder{color:#93866e!important}
+.newsletter-form button{background:linear-gradient(135deg,#e5c783,#b88940)!important;color:#1a140b!important}
+.site-footer{background:#080807!important;border-top:1px solid #c69b5033!important;color:#e8dcc5!important}
+.footer-brand,.footer-links{color:#e8dcc5!important}
+.footer-main>p,.footer-bottom{color:#a99b82!important}
+.page-hero{background:radial-gradient(ellipse at 80% 15%,rgba(190,146,69,.14),transparent 44%),#14120e!important;border-bottom:1px solid #c69b5033!important}
+.catalog-toolbar select,.contact-form input,.contact-form textarea,
+input,textarea,select{background:#17140f!important;color:#f0e5d1!important;border-color:#8d6a353d!important}
+input::placeholder,textarea::placeholder{color:#95866c!important}
+.filter-chip{background:#17140f!important;border-color:#72552d!important;color:#d4c3a3!important}
+.filter-chip.active,.filter-chip:hover{background:#c69b50!important;border-color:#e1bd76!important;color:#171109!important}
+.cart-summary{background:#19150f!important;border:1px solid #c69b5045!important;color:#f1e6d1!important}
+.cart-item{border-color:#c69b5033!important;color:#eee2ca!important}
+.cart-item h3{color:#f3e8d4!important}
+.empty-state{color:#b9ad98!important}
+.empty-state h2{color:#dfba70!important}
+.icon-link{background:#211a10!important;color:#e3c27d!important;border:1px solid #c69b5040!important}
+.icon-link:hover{background:#3a2b13!important;color:#ffe2a0!important}
+.wishlist-link{background:#211a10!important;color:#e3c27d!important;border-color:#c69b5060!important}
+.wishlist-count{background:#d8b46b!important;color:#171109!important;border-color:#17130d!important}
+.bag-link{background:linear-gradient(135deg,#332715,#1c170e)!important;border:1px solid #c69b5070!important;color:#f1d99f!important}
+.bag-link .count{color:#f1d99f!important}
+.button-outline{background:#17140f!important;color:#e3c27d!important;border-color:#bd914b!important}
+.button-outline:hover{background:#c69b50!important;color:#171109!important}
+.add-cart{background:linear-gradient(135deg,#e6c987,#b88940)!important;color:#1a140b!important;border-color:#e4c47f!important}
+.add-cart:hover{background:linear-gradient(135deg,#f5dfa8,#d1a65b)!important;color:#171109!important}
+.button-gold{background:linear-gradient(135deg,#f0d99e,#c09245)!important;color:#1a140b!important}
+.toast{background:#211a10!important;color:#f2e6ce!important;border:1px solid #c69b5055!important}
+.menu-toggle{background:#211a10!important;border:1px solid #c69b5055!important}
+.menu-toggle i{background:#d7b56e!important}
+@media(max-width:680px){
+ .main-nav{background:rgba(17,15,11,.98)!important;border:1px solid #c69b5040!important}
+ .main-nav a{color:#e0d1b5!important}
+ .main-nav a.active{background:#352816!important;color:#f0cf89!important}
+ .hero{background:radial-gradient(ellipse at 50% 20%,rgba(190,146,69,.17),transparent 45%),linear-gradient(150deg,#171510,#0b0b09)!important}
+}
