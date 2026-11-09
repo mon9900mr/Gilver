@@ -1,9 +1,7 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from './supabase-config.js';
-const configured=SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('YOUR_PROJECT')&&SUPABASE_ANON_KEY.length>30&&!SUPABASE_ANON_KEY.includes('YOUR_SUPABASE');
-export const supabase=configured?createClient(SUPABASE_URL,SUPABASE_ANON_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}):null;
-export async function requireUser(){if(!supabase)throw new Error('اتصال Supabase هنوز تنظیم نشده است.');const{data:{user},error}=await supabase.auth.getUser();if(error||!user){location.href='login.html';throw new Error('ابتدا وارد حساب شوید.')}const{data:profile,error:pe}=await supabase.from('profiles').select('id,full_name,role,is_blocked').eq('id',user.id).single();if(pe||!profile||profile.is_blocked){await supabase.auth.signOut();location.href='login.html';throw new Error('دسترسی این حساب فعال نیست.')}return{user,profile}}
-export async function requireAdmin(){const s=await requireUser();if(s.profile.role!=='admin'){location.href='index.html';throw new Error('دسترسی مدیر لازم است.')}return s}
-export function showMessage(n,m,kind='error'){if(!n)return;n.textContent=m;n.dataset.kind=kind;n.hidden=false}
-export async function mountAuthHeader(){const h=document.querySelector('.header-actions');if(!h||!supabase)return;const{data:{user}}=await supabase.auth.getUser();const a=document.createElement('a');a.className='account-link';a.href=user?'account.html':'login.html';a.textContent=user?'حساب من':'ورود';h.prepend(a)}
+import{DB}from'./database.js';
+export const supabase=null;
+export function showMessage(node,message,kind='error'){if(!node)return;node.textContent=message;node.dataset.kind=kind;node.hidden=false}
+export async function requireUser(){const user=DB.getUser();if(!user){location.href='login.html';throw Error('ابتدا وارد حساب شو.')}if(user.banned){DB.logout();location.href='login.html';throw Error('این حساب مسدود شده است.')}return{user,profile:{...user,role:user.role==='owner'?'admin':user.role,is_blocked:user.banned}}}
+export async function requireAdmin(){const session=await requireUser();if(!['owner','admin'].includes(session.user.role)){location.href='index.html';throw Error('دسترسی مدیر لازم است.')}return session}
+export async function mountAuthHeader(){const h=document.querySelector('.header-actions'),user=DB.getUser();if(!h)return;const a=h.querySelector('.auth-link');if(a){a.href=user?'account.html':'login.html';a.textContent=user?'حساب من':'ورود / ثبت‌نام'}}
 document.addEventListener('DOMContentLoaded',mountAuthHeader);
