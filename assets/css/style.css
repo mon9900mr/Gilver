@@ -316,3 +316,92 @@ html,body{background:#10100f!important;color:#f4efe5}
 .site-footer{background:#0b0b0a!important}
 .toast{background:#d2ad68!important;color:#17130c!important}
 @media(max-width:680px){.main-nav{background:#151411!important;border-color:rgba(210,173,104,.2)!important}}
+
+
+/* Wishlist page — bespoke black & gold redesign */
+.wishlist-page{background:#0e0e0c;color:#f3ecdf;font-family:'Estedad','Vazirmatn',sans-serif}
+.wishlist-header{height:78px;margin:0;width:100%;padding:0 6.5%;border:0;border-bottom:1px solid rgba(205,166,94,.22);border-radius:0;background:rgba(14,14,12,.96);box-shadow:0 8px 28px rgba(0,0,0,.22);backdrop-filter:blur(22px)}
+.wishlist-page .brand{gap:12px;color:#f4ead6;font-family:'Estedad','Vazirmatn',sans-serif;letter-spacing:0;font-weight:800}
+.wishlist-page .brand-mark{width:43px;height:43px;border:0;border-radius:50%;background:transparent;box-shadow:none}
+.wishlist-page .brand-mark svg{width:100%;height:100%}
+.wishlist-page .brand-word{font-size:19px;line-height:1.1}
+.wishlist-page .brand-word small{font:500 9px 'Estedad','Vazirmatn',sans-serif;letter-spacing:0;color:#a9946d;margin-top:6px}
+.wishlist-page .main-nav{gap:8px;color:#c8bdab;font-family:'Estedad','Vazirmatn',sans-serif;font-size:12px}
+.wishlist-page .main-nav a{padding:10px 14px;border-radius:12px}
+.wishlist-page .main-nav a:hover,.wishlist-page .main-nav a.active{background:rgba(202,162,91,.1);color:#e1c17f}
+.wishlist-page .header-actions{gap:12px;font-family:'Estedad','Vazirmatn',sans-serif}
+.wishlist-page .icon-link{width:42px;height:42px;border:1px solid rgba(202,162,91,.3);border-radius:14px;background:#1a1813;color:#d7b36c}
+.wishlist-page .icon-link svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7}
+.wishlist-page .bag-link{border:1px solid rgba(202,162,91,.55);border-radius:14px;background:linear-gradient(135deg,#d9ba7a,#a97b39);color:#17130c;padding:12px 18px;font-family:'Estedad','Vazirmatn',sans-serif;font-weight:700}
+.wishlist-main{min-height:70vh}
+.wishlist-hero{position:relative;overflow:hidden;padding:76px 8% 40px;background:radial-gradient(ellipse at 78% 35%,rgba(183,135,57,.16),transparent 34%),radial-gradient(ellipse at 15% 0%,rgba(255,255,255,.035),transparent 35%),linear-gradient(135deg,#17150f,#10100e 65%);border-bottom:1px solid rgba(202,162,91,.2)}
+.wishlist-hero:after{content:"";position:absolute;inset:18px 5%;border:1px solid rgba(202,162,91,.08);border-radius:22px;pointer-events:none}
+.wishlist-hero-inner{max-width:1180px;margin:auto;position:relative;z-index:1}
+.wishlist-kicker,.wishlist-overline{display:flex;align-items:center;gap:10px;color:#c69b55;font-size:11px;font-weight:600}
+.wishlist-kicker span{width:27px;height:1px;background:#c69b55}
+.wishlist-title-row{display:flex;justify-content:space-between;align-items:center;gap:30px;margin:27px 0 26px}
+.wishlist-title-row h1{font-family:'Estedad','Vazirmatn',sans-serif;font-size:clamp(34px,5vw,58px);font-weight:700;line-height:1.45;letter-spacing:-.04em;color:#f4ecdf;margin:0 0 10px}
+.wishlist-title-row p{font-family:'Estedad','Vazirmatn',sans-serif;font-size:14px;line-height:2;color:#b6aa94;margin:0}
+.wishlist-heart-art{width:126px;height:126px;flex:0 0 126px;border:1px solid rgba(202,162,91,.22);border-radius:36px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(202,162,91,.11),rgba(255,255,255,.015));box-shadow:inset 0 1px rgba(255,255,255,.06),0 18px 45px rgba(0,0,0,.2);transform:rotate(3deg)}
+.wishlist-heart-art svg{width:76px;height:76px;filter:drop-shadow(0 5px 12px rgba(191,145,66,.2))}
+.wishlist-meta{display:flex;align-items:center;gap:12px;color:#887d6b;font-size:11px}
+.wishlist-meta-dot{width:6px;height:6px;border-radius:50%;background:#cba45e;box-shadow:0 0 12px #cba45e}
+.wishlist-meta-line{height:1px;width:55px;background:rgba(202,162,91,.3)}
+.wishlist-meta a{color:#d7b36c;font-weight:600}
+.wishlist-meta a b{font-size:16px;margin-right:5px}
+.wishlist-content{max-width:1280px;margin:0 auto;padding:58px 7% 100px}
+.wishlist-section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px;padding-bottom:18px;border-bottom:1px solid rgba(202,162,91,.16)}
+.wishlist-overline{font-size:10px;margin-bottom:10px}
+.wishlist-section-head h2{font-family:'Estedad','Vazirmatn',sans-serif;font-size:23px;font-weight:600;color:#eee5d5;margin:0}
+.wishlist-count-label{color:#988d7b;font-size:11px}
+.wishlist-count-label b{color:#d8b66f;font:700 15px 'Manrope',sans-serif;margin-left:5px}
+.wishlist-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.wishlist-grid .product-card{background:#171612;border:1px solid rgba(202,162,91,.16);border-radius:20px;padding:10px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.16);transition:transform .3s,border-color .3s,box-shadow .3s}
+.wishlist-grid .product-card:hover{transform:translateY(-6px);border-color:rgba(202,162,91,.5);box-shadow:0 20px 38px rgba(0,0,0,.28)}
+.wishlist-grid .product-image-wrap{height:290px;border-radius:14px;background:#211e17}
+.wishlist-grid .product-image{border-radius:14px}
+.wishlist-grid .product-wish{width:39px;height:39px;top:12px;left:12px;background:rgba(17,15,11,.86);border:1px solid rgba(202,162,91,.3);color:#e0bd75;display:grid;place-items:center}
+.wishlist-grid .product-wish svg{width:19px;height:19px}
+.wishlist-grid .product-info{padding:16px 8px 8px}
+.wishlist-grid .product-category{color:#b69a67;font-size:10px}
+.wishlist-grid .product-title{color:#f2eadc;font-family:'Estedad','Vazirmatn',sans-serif;font-size:14px;font-weight:600}
+.wishlist-grid .product-price{color:#e0bd75;font-family:'Estedad','Vazirmatn',sans-serif;font-weight:700;font-size:13px}
+.wishlist-grid .add-cart{border:1px solid rgba(202,162,91,.45);border-radius:10px;color:#e2c17d;padding:9px 13px;font-family:'Estedad','Vazirmatn',sans-serif;font-size:11px}
+.wishlist-grid .add-cart:hover{background:#c69b55;color:#17130c}
+.wishlist-grid .empty-state{grid-column:1/-1;padding:55px 25px 65px;border:1px dashed rgba(202,162,91,.28);border-radius:22px;background:linear-gradient(145deg,rgba(202,162,91,.06),rgba(255,255,255,.012));color:#b7aa94}
+.wishlist-grid .empty-state:before{content:"♡";display:grid;place-items:center;width:66px;height:66px;margin:0 auto 20px;border:1px solid rgba(202,162,91,.35);border-radius:22px;color:#d8b66f;font:34px 'Manrope',sans-serif}
+.wishlist-grid .empty-state h2{font-family:'Estedad','Vazirmatn',sans-serif;font-size:23px;font-weight:600;color:#f0e5d2;margin-bottom:9px}
+.wishlist-grid .empty-state p{font-size:13px;color:#a99c86;line-height:2}
+.wishlist-grid .empty-state .button{border-radius:12px;background:linear-gradient(135deg,#e0c486,#b58a45);font-family:'Estedad','Vazirmatn',sans-serif}
+.wishlist-footer{padding:28px 8% 20px;background:#0a0a09}
+.wishlist-footer .footer-bottom{font-family:'Estedad','Vazirmatn',sans-serif;letter-spacing:0;color:#8d826f}
+.wishlist-footer .footer-bottom a{color:#d7b36c}
+@media(max-width:900px){.wishlist-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){
+.wishlist-header{height:70px;padding:0 4%}
+.wishlist-page .brand-word{font-size:16px}
+.wishlist-page .brand-mark{width:36px;height:36px}
+.wishlist-page .main-nav{top:69px;right:4%;left:4%;margin:0;border:1px solid rgba(202,162,91,.25);border-radius:0 0 18px 18px;background:rgba(18,17,14,.98);box-shadow:0 15px 30px #0008}
+.wishlist-page .main-nav a{color:#e4d8c3}
+.wishlist-page .header-actions{gap:7px;margin-right:auto;margin-left:7px}
+.wishlist-page .icon-link{width:36px;height:36px}
+.wishlist-page .bag-link{font-size:10px;padding:9px 10px}
+.wishlist-hero{padding:54px 7% 30px}
+.wishlist-hero:after{inset:10px 3%;border-radius:16px}
+.wishlist-title-row{margin:22px 0;gap:10px}
+.wishlist-title-row h1{font-size:34px}
+.wishlist-title-row p{font-size:12px;max-width:280px}
+.wishlist-heart-art{width:76px;height:76px;flex-basis:76px;border-radius:23px}
+.wishlist-heart-art svg{width:48px;height:48px}
+.wishlist-meta{font-size:10px;gap:8px;flex-wrap:wrap}
+.wishlist-meta-line{width:22px}
+.wishlist-content{padding:40px 5% 65px}
+.wishlist-section-head h2{font-size:19px}
+.wishlist-grid{gap:12px}
+.wishlist-grid .product-image-wrap{height:205px}
+.wishlist-grid .product-info{padding:12px 5px 6px}
+.wishlist-grid .product-title{font-size:12px}
+.wishlist-grid .product-price{font-size:11px}
+.wishlist-grid .add-cart{font-size:9px;padding:7px 8px}
+}
+@media(max-width:390px){.wishlist-title-row h1{font-size:29px}.wishlist-heart-art{display:none}.wishlist-grid .product-image-wrap{height:170px}}
