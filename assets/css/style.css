@@ -432,3 +432,10 @@ html,body{background:#10100f!important;color:#f4efe5}
 .wishlist-title-row{margin:18px 0}
 .wishlist-title-row h1{font-size:31px}
 }
+
+
+/* Header account entry */
+.header-actions{display:flex;align-items:center;gap:10px}
+.header-actions .auth-link,.auth-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 17px;border:1px solid rgba(214,181,109,.62);border-radius:13px;background:linear-gradient(135deg,rgba(214,181,109,.18),rgba(214,181,109,.06));color:#e8cb8f;text-decoration:none;font-family:'Estedad','Vazirmatn',sans-serif;font-size:12px;font-weight:700;white-space:nowrap;transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease}
+.header-actions .auth-link:hover,.auth-link:hover{transform:translateY(-2px);background:linear-gradient(135deg,rgba(214,181,109,.3),rgba(214,181,109,.12));border-color:#e6c783;box-shadow:0 7px 22px rgba(190,145,63,.14)}
+@media(max-width:680px){.header-actions{gap:6px}.header-actions .auth-link{min-height:37px;padding:0 10px;font-size:10px;border-radius:11px}}
